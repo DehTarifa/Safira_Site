@@ -1,0 +1,69 @@
+/* SECTION 07 ----------------------------*/
+.section-07{
+    background-color: var(--S7-background-color-section);
+}
+
+.container-section-07{
+    padding: 5rem 1rem;
+}
+
+/*----------------------------------------*/
+.container-section-07 > .content-title{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--S7-content-title-color);
+}
+
+.container-section-07 > .content-title > h2{
+    margin-bottom: 1.5rem;
+}
+
+.container-section-07 > .content-title > p{
+    margin-bottom: 0;
+}
+
+/*----------------------------------------*/
+
+.container-section-07 > .content-information{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.container-section-07 > .content-information > .card-information{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem;
+    margin-bottom: 1rem;
+    min-height: 8rem;
+
+    color: var(--S7-text-color-card);
+}
+
+.container-section-07 > .content-information > .card-information > img{
+    background-color: var(--S7-background-color-img-card);
+    width: 10rem;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    padding: .3rem;
+}
+
+.container-section-07 > .content-information > .card-information > span > h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container-section-07 > .content-information > .card-information > span > p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media screen and (min-width: 992px){
+    .container-section-07 > .content-information > .card-information{
+        padding: 1rem;
+        margin: 0;
+        min-height: 9rem;
+    }
+}

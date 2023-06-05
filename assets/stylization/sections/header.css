@@ -1,0 +1,493 @@
+/* MAIN NAVEGATION BAR | NAVEGATION TOP  --------------*/
+
+#main-navegation-bar{
+    position: fixed;
+    background: var(--main-navbar-background-color);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.312);
+    transition: background .6s ease, transform .6s ease;
+    z-index: 99;
+
+    min-height: 4rem;
+}
+
+#main-navegation-bar.active{
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.312);
+    background-color: var(--main-navbar-background-color-active); 
+}
+
+/* MAIN NAVEGATION BAR | NAVEGATION INFORMATION  ------*/
+
+.container-navbar-information{
+    background-color: var(--main-navbar-background-information);
+    padding: 0;
+}
+
+.content-navbar-information{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.content-navbar-information > .card-information{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-navbar-information > .card-information > img{
+    width: 100%;
+    max-width: 1.5rem;
+}
+
+.content-navbar-information > .card-information > p{
+    margin: 0;
+    color: var(--main-navbar-text-color-information);
+    font-size: .9rem;
+}
+
+/* MAIN NAVEGATION BAR | TOP HEADER -------------------*/
+
+.container-navbar-top-header{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: .5rem;
+}
+
+/* MAIN NAVEGATION BAR | TOP HEADER BRAND -------------*/
+
+.content-navbar-brand{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+}
+
+.content-navbar-brand > .navbar-img-sm{
+    width: 100%;
+    max-width: 4rem;
+    margin-top: .4rem;
+}
+
+.content-navbar-brand > .navbar-img-lg{
+    width: 100%;
+    max-width: 4rem;
+}
+
+/* MAIN NAVEGATION BAR | TOP HEADER LINKS -------------*/
+
+.content-navbar-links{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.content-navbar-links > .nav-link{
+    text-decoration: none;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    color: var(--navlinks-textcolor);
+    transition: .6s ease;
+    
+    position: relative;
+}
+
+.content-navbar-links > .nav-link:hover{
+    background-color: var(--navlinks-background-color);
+}
+
+.content-navbar-links > .nav-link::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--navlinks-afterbottom-color);
+    transition: .6s ease;
+}
+
+.content-navbar-links > .nav-link:hover::after{
+    width: 100%;
+}
+
+#main-navegation-bar.active > .container > .content-navbar-links > .nav-link {
+    color: var(--navlinks-textcolor-active);
+}
+
+.content-navbar-links > .a-assing{
+    background-color: var(--navlinks-background-assing);
+    color: var(--navlinks-textcolor-assing);
+    height: 3.5rem;
+    min-width: 9rem;
+
+    margin-left: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .6s ease;
+}
+
+.content-navbar-links > .a-assing:hover{
+    background-color: var(--navlinks-background-assing-hover);
+}
+
+/* MAIN NAVEGATION BAR | TOP HEADER DROPDOWN ----------*/
+
+.dropdown-main-navegation-links{
+    position: relative;
+}
+
+.dropdown-main-navegation-links > button{
+    border: none;
+    height: 3.5rem;
+    padding: 0 1rem;
+    font-weight: 400;
+    background-color: var(--dropdown-background-button);
+    color: var(--dropdown-text-color-button);
+    width: 10rem;
+}
+
+.dropdown-main-navegation-links > .dropdown-links{
+    position: absolute;
+    right: 0rem;
+
+    flex-direction: column;
+    background-color: var(--dropdown-background-menu);
+    width: 15rem;
+    padding: 1rem;
+    display: none;
+}
+
+.dropdown-main-navegation-links:hover > .dropdown-links{
+    display: flex;
+}
+
+.dropdown-main-navegation-links > .dropdown-links > a{
+    text-decoration: none;
+    color: var(--dropdown-text-color-menu-link);
+    padding: .8rem;
+    transition: .6s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.dropdown-main-navegation-links > .dropdown-links > a::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--dropdown-background-menu-link-after);
+    bottom: 0;
+    left: 0;
+
+    z-index: -1;
+    transition: .6s ease;
+}
+
+.dropdown-main-navegation-links > .dropdown-links > a:hover::after{
+    width: 100%;
+}
+
+/* MAIN NAVEGATION BAR | BUTTOM NAV SIDE --------------*/
+
+.content-navbar-button{
+    height: 3.6rem;
+    width: 100%;
+    max-width: 10rem;
+}
+
+.content-navbar-button > button{
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: var(--header-button-sidemenu);
+    color: var(--header-button-sidemenu-text);
+}
+
+/* MAIN NAVEGATION BAR | SIDE NAVEGATION BAR ----------*/
+
+#container-sidenavbar{
+    width: 100%;
+    max-width: 22rem;
+    height: 100vh;
+    padding: 2rem;
+    z-index: 99;
+
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.426);
+    background-color: var(--containersidebar-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(-22rem);
+    transition: transform .6s ease;
+}
+
+#container-sidenavbar.active{
+    transform: translateX(0);
+}
+
+#container-sidenavbar > .content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#container-sidenavbar > .content-header > img{
+    width: 100%;
+    max-width: 7rem;
+}
+
+#container-sidenavbar > .content-header > button{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 100%;
+    background: transparent;
+    border: 2px solid var(--containersidebar-border-closeButton);
+    transition: .6s ease;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+#container-sidenavbar > button:hover{
+    background-color: var(--containersidebar-background-closeButton);
+}
+
+#container-sidenavbar > .content-header > button > img{
+    width: 100%;
+    max-width: 1.1rem;
+    margin-left: -3px;
+}
+
+#container-sidenavbar > .nav-link{
+    text-decoration: none;
+    width: 100%;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+
+    position: relative;
+    z-index: 2;
+    color: var(--containersidebar-items-textcolor);
+    border-left: 2px solid transparent;
+    transition: border .5s;
+}
+
+#container-sidenavbar > .nav-links:hover{
+    border-left: 2px solid var(--hoverafter-border-navlinks);
+}
+
+#container-sidenavbar > .nav-links::after{
+    content: '';
+    position: absolute;
+    background-color: var(--hoverafter-background-navlinks);
+    width: 0%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: .6s ease;
+}
+
+#container-sidenavbar > .nav-links:hover::after{
+    width: 100%;
+}
+
+#container-sidenavbar > .a-assing{
+    width: 100%;
+    padding: .7rem 1rem;
+    margin-top: 1.5rem;
+    border-radius: 3px;
+
+    background-color: var(--containersidebar-assing-background);
+    color: var(--containersidebar-assing-textcolor);
+    transition: background .6s ease;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#container-sidenavbar > .a-assing:hover{
+    background-color: var(--containersidebar-assing-background-hover);
+}
+
+#container-sidenavbar > .content-copyright{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#container-sidenavbar > .content-copyright > #navsidebar-text-copy{
+    margin: 0;
+    color: var(--navsidebar-textcolor-copy);
+    font-weight: 200;
+    text-align: center;
+    font-size: .9rem;
+}
+
+/* RESPONSIVE FOR NOTEBOOK ----------------------------*/
+
+@media screen and (min-width: 992px){
+    #main-navegation-bar{
+        transform: translateY(0rem);
+    }
+
+    #main-navegation-bar.active{
+        transform: translateY(-40px);
+    }
+
+    .content-navbar-brand{
+        max-width: 18rem;
+    }
+}
+
+/* HEADER BANNER PROMOTION ----------------------------*/
+
+#header-banner-promotion{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: var(--header-background-bannerpromotion);
+    z-index: 99;
+    display: none;
+}
+
+#header-banner-promotion.active{
+    display: block;
+}
+
+.container-banner-promotion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.container-banner-promotion > button{
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    padding: .6rem;
+    border-radius: 100%;
+    background-color: var(--button-background-bannerpromotion);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1rem;
+}
+
+.container-banner-promotion > a{
+    text-align: center;
+}
+
+.container-banner-promotion > a > img{
+    width: 70%;
+    max-width: 22rem;
+    margin-bottom: 1rem;
+}
+
+.container-banner-promotion > p{
+    color: #ffffff;
+    font-size: .9rem;
+}
+
+/* HEADER FLOATING WHATSAPP ---------------------------*/
+
+.header-floating-button{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 100%;
+    max-width: 4rem;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.container-floating-button{
+    position: relative;
+    z-index: 0;
+    background-color: var(--floating-button-background);
+    padding: .8rem;
+    border-radius: 50%;
+}
+
+.container-floating-button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--floating-border-button-color-1);
+
+    border-radius: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    animation-name: floating-button;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.container-floating-button > a > img{
+    width: 100%;
+}
+
+@keyframes floating-button{
+    to{
+        transform: scale(1.6);
+        background-color: var(--floating-border-button-color-2);
+    }
+}
+
+/* HEADER LOADING SCREEN ------------------------------*/
+
+.header-loading-screen{
+    display: block;
+}
+
+.container-loading-screen{
+    display: block;
+}
+
+.container-loading-screen > .loading{
+    display: block;
+}
+
+

@@ -1,0 +1,91 @@
+/* SECTION 05 ----------------------------*/
+.section-05{
+    background-color: var(--S5-background-color-section);
+}
+
+.container-section-05{
+    padding: 5rem 2rem;
+}
+
+/* SECTION 05 | CONTENT TEXT -------------*/
+
+.container-section-05 > .content-text{
+    padding: 0;
+    color: var(--S5-content-text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container-section-05 > .content-text > h2{
+    margin-bottom: 1.5rem;
+}
+
+.container-section-05 > .content-text > p{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+/* SECTION 05 | CONTENT IMG --------------*/
+
+.container-section-05 > .content-img{
+    padding: 1rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-section-05 > .content-img > img{
+    width: 100%;
+    max-width: 425px;
+}
+
+/* SECTION 05 | CONTENT COLORS --------------*/
+
+.container-section-05 > .content-colors{
+    display: flex;
+    gap: .5rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container-section-05 > .content-colors > .card-colors{
+    width: 70px;
+    height: 70px;
+}
+
+.container-section-05 > .content-colors > .card-colors:nth-child(1){
+    background-color: #9CAAE6;
+}
+
+.container-section-05 > .content-colors > .card-colors:nth-child(2){
+    background-color: #616CC0;
+}
+
+.container-section-05 > .content-colors > .card-colors:nth-child(3){
+    background-color: #293199;
+}
+
+.container-section-05 > .content-colors > .card-colors:nth-child(4){
+    background-color: #1520AF;
+}
+/*----------------------------------------*/
+
+@media screen and (min-width: 992px){
+    .container-section-05{
+        padding: 5rem .5rem;
+    }
+
+    .container-section-05 > .content-text{
+        padding: 0rem 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .container-section-05 > .content-img > img{
+        max-width: 30rem;
+    }
+}

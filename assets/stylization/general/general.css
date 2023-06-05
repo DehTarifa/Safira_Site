@@ -1,0 +1,23 @@
+/* IMPORT GENERAL CSS ------------------------*/
+@import '../general/bootstrap.css';
+
+/* IMPORT SECTION CSS ------------------------*/
+
+@import '../sections/header.css';
+
+@import '../sections/section_01.css';
+@import '../sections/section_02.css';
+@import '../sections/section_03.css';
+@import '../sections/section_04.css';
+@import '../sections/section_05.css';
+@import '../sections/section_06.css';
+@import '../sections/section_07.css';
+@import '../sections/section_08.css';
+@import '../sections/section_09.css';
+@import '../sections/section_10.css';
+
+@import '../sections/footer.css';
+
+html {
+  scroll-behavior: smooth;
+}

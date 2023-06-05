@@ -1,0 +1,145 @@
+:root{
+
+    /* MAIN NAVEGATION BAR | CONTAINER ------------------------*/
+    --main-navbar-background-color:                      #9CAAE6;
+    --main-navbar-background-color-active:               #9CAAE6;
+
+    /* MAIN NAVEGATION BAR | BUTTON SIDE MENU -----------------*/
+    --header-button-sidemenu:                            #616CC0;
+    --header-button-sidemenu-text:                       #fff;
+
+    /* MAIN NAVEGATION BAR | INFORMATION ----------------------*/
+    --main-navbar-background-information:                #293199 ;
+    --main-navbar-text-color-information:                #ffffff;
+
+   /* MAIN NAVEGATION BAR | NAV LINKS -------------------------*/
+
+    --navlinks-textcolor:                                #ffffff;
+    --navlinks-textcolor-active:                         #ffffff;
+
+    --navlinks-afterbottom-color:                        #616CC0;
+    --navlinks-background-color:                         #00c95400;
+
+    --navlinks-background-assing:                        #e0a64e;
+    --navlinks-background-assing-hover:                  #f7b045;
+    --navlinks-textcolor-assing:                         #fff;
+
+    /* MAIN NAVEGATION BAR | DROPDOWN LINK ---------------------*/
+
+    --dropdown-background-button:                        #00c954b6;
+    --dropdown-text-color-button:                        #ffffff;
+
+    --dropdown-background-menu:                          #131313;
+    --dropdown-text-color-menu-link:                     #fcfcfcb6;
+    --dropdown-background-menu-link-after:               #00c954de;
+
+   /* MAIN NAVEGATION BAR | CONTAINER SIDE MENU ---------------*/
+
+    --containersidebar-background-color:                 #131313;
+    --containersidebar-background-closeButton:           #00c95443;
+    --containersidebar-border-closeButton:               #00c954b6;
+    --containersidebar-items-textcolor:                  #ffffff;
+
+    --hoverafter-background-navlinks:                    #00c95443;
+    --hoverafter-border-navlinks:                        #00c954e5;
+    
+    --containersidebar-assing-background:                #e0a54e8d; 
+    --containersidebar-assing-background-hover:          #e0a64e; 
+    --containersidebar-assing-textcolor:                 #fff; 
+    --navsidebar-textcolor-copy:                         #ffffffd2;
+
+   /* TOP HEADER | FLOTING BUTTON WHATSAPP --------------------*/
+
+    --floating-button-background:                        #008a12;
+    --floating-border-button-color-1:                    #00ad178d;
+    --floating-border-button-color-2:                    #47c5fb00;
+
+   /* TOP HEADER | BANNER PROMOTION  --------------------------*/
+    --header-background-bannerpromotion:                 #000000d7;
+    --button-background-bannerpromotion:                 #cb1e00;
+
+    /* SECTION 01 | VARIABLES ---------------------------------*/
+
+    --S1-background-color-section:                       #D2E2FF;  
+    --S1-content-text-color:                             #616CC0;  
+    --S1-content-text-color-h2:                          #293199;  
+    --S1-content-text-color-h1-strong:                   #1d1d1d;  
+
+    --S1-text-color-link-a:                              #fefefe;
+    --S1-background-link-a:                              #616cc0b7;
+    --S1-background-link-a-hover:                        #616CC0;
+
+    /* SECTION 02 | VARIABLES ---------------------------------*/
+
+    --S2-background-color-section:                       #FAF9FE;  
+    --S2-content-text-color:                             #000000;  
+    --S2-content-text-color-p:                           #000000;
+    --S2-content-text-color-h2-strong:                   #616CC0;
+
+    --S2-content-text-color-link-a:                      #FAF9FE;
+    --S2-content-background-color-link-a:                #00c954;
+
+    /* SECTION 03 | VARIABLES ---------------------------------*/
+
+    --S3-background-color-section:                       #FEFEFE;  
+    --S3-content-title-color:                            #241C0E; 
+
+    --S3-background-color-button:                        #00c9543a;
+    --S3-background-color-button-active:                 #00c954;
+    --S3-text-color-button:                              #020202d6;
+
+    --S3-background-color-card-pricing:                  #272727;
+    --S3-text-color-card-pricing:                        #fefefe;
+    --S3-background-color-link-a:                        #00c954;
+    --S3-text-color-link-a:                              #FAF9FE;
+
+    --S3-background-color-card-pricing-promotion:        #171717;
+    --S3-text-color-card-pricing-promotion:              #fefefe;
+    --S3-background-color-link-a-promotion:              #00c954;
+    --S3-text-color-link-a-promotion:                    #FAF9FE;
+
+    /* SECTION 04 | VARIABLES ---------------------------------*/
+    --S4-background-color-section:                       #9CAAE6;  
+    --S4-content-title-color:                            #fefefe; 
+
+    --S4-text-color-card:                                #fefefe;
+    --S4-border-bottom-card:                             #616CC0;
+    --S4-background-color-card:                          #616CC0;
+    --S4-background-color-img-card:                      #9CAAE6;
+
+    /* SECTION 05 | VARIABLES ---------------------------------*/
+
+    --S5-background-color-section:                       #FAF9FE;  
+    --S5-content-text-color:                             #241C0E;  
+
+    /* SECTION 06 | VARIABLES ---------------------------------*/
+
+    --S6-background-color-section:                       #1c1c1c;  
+    --S6-content-text-color:                             #ffffff; 
+    
+    /* SECTION 07 | VARIABLES ---------------------------------*/
+
+    --S7-background-color-section:                       #FAF9FE;  
+    --S7-content-title-color:                            #241C0E; 
+
+    --S7-background-color-img-card:                      #9CAAE6;
+    --S7-text-color-card:                                #242424;
+
+    /* SECTION 08 | VARIABLES ---------------------------------*/
+
+    /* SECTION 09 | VARIABLES ---------------------------------*/
+
+    /* FOOTER | VARIABLES -------------------------------------*/
+
+    --footer-background-color:                          #616CC0;
+    --footer-background-color-social-a:                 #9caae6ce;
+    --footer-background-color-social-a-hover:           #9CAAE6;
+    --footer-text-color-brand:                          #ffffffcb;
+
+    --footer-text-color-link-h3:                        #ffffff;
+    --footer-text-color-link-a:                         #ffffffa0;
+    --footer-after-color-link-hover:                    #9CAAE6;
+
+    --footer-background-color-copyright:                #2d3170;
+    --footer-text-color-copyright:                      #ffffff;
+}

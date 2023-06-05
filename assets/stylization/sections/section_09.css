@@ -1,0 +1,65 @@
+/* SECTION 09 ----------------------------*/
+
+.section-09{
+    background-color: #fefefe;
+    padding: 2rem 2rem 0rem;
+}
+
+.container-section-09 > .row > .content-text{
+    color: #030303;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.container-section-09 > .row > .content-text > h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.container-section-09 > .row > .content-text > p{
+    font-size: .9rem;
+}
+
+.container-section-09 > .row > .content-text > a{
+    background-color: #616CC0;
+    color: #fff;
+    width: 100%;
+    max-width: 15rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: .8rem;
+    border-radius: 4px;
+}
+
+.container-section-09 > .row > .content-img{
+    text-align: center;
+}
+
+.container-section-09 > .row > .content-img > img{
+    width: 100%;
+    max-width: 25rem;
+}
+
+@media screen and (min-width: 992px){
+    .container-section-09 > .row > .content-text{
+        align-items: start;
+        text-align: start;
+    }
+
+    .container-section-09 > .row > .content-text > h3{
+        font-size: 1.8rem;
+    }
+
+    .container-section-09 > .row > .content-text > p{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,89 @@
+/* SECTION 04 ----------------------------*/
+
+.section-04{
+    background-color: var(--S4-background-color-section);
+}
+
+.container-section-04{
+    padding: 5rem 0rem;
+}
+
+/*----------------------------------------*/
+
+.container-section-04 > .content-title{
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 2rem;
+    color:  var(--S4-content-title-color);
+}
+
+.container-section-04 > .content-title > p {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------*/
+
+.container-cards-services{
+    overflow-x: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: 2rem 1.4rem;
+}
+
+.container-cards-services > .card-services{
+    width: 100%;
+    max-width: 20rem;
+    min-width: 17rem;
+
+    min-height: 25rem;
+    text-align: start;
+
+    border-bottom: 4px solid var(--S4-border-bottom-card);
+    background: var(--S4-background-color-card);
+    color: var(--S4-text-color-card);
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+
+    padding: 2rem 1rem;
+}
+
+.container-cards-services > .card-services > img{
+    width: 100%;
+    max-width: 4rem;
+    margin-bottom: 2rem;
+    background-color: var(--S4-background-color-img-card);
+    padding: .5rem;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+}
+
+.container-cards-services > .card-services > h3{
+    font-size: 1.5rem;
+}
+
+.container-cards-services > .card-services > p{
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 992px){
+    .container-cards-services{
+        justify-content: center;
+    }
+
+    .container-cards-services > .card-services{
+        min-height: 22rem;
+    }
+
+    .container-cards-services > .card-services > h3{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .container-cards-services > .card-services > p{
+        font-size: 1rem;
+    }
+}

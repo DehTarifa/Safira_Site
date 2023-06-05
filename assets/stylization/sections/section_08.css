@@ -1,0 +1,47 @@
+/* SECTION 08 ----------------------------*/
+
+.section-08{
+    background-color: #59C6DF;
+}
+
+.container-section-08{
+    padding: 2rem 2rem 0rem;
+}
+
+/*----------------------------------------*/
+
+.container-section-08 > .row > .content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.container-section-08 > .row > .content-text > h3{
+    font-size: 1.5rem;
+}
+
+.container-section-08 > .row > .content-text > p{
+    min-height: 6rem;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.container-section-08 > .row > .content-img{
+    text-align: center;
+}
+
+.container-section-08 > .row > .content-img > img{
+    width: 100%;
+    max-width: 25rem;
+}
+
+@media screen and (min-width: 992px){
+    .container-section-08 > .row > .content-text > h3{
+        font-size: 2rem;
+    }
+    
+    .container-section-08 > .row > .content-text > p{
+        font-size: 1rem;
+    }
+}

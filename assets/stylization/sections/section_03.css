@@ -1,0 +1,190 @@
+/* SECTION 03 ----------------------------*/
+.section-03{
+    background-color: var(--S3-background-color-section);
+}
+
+.container-section-03{
+    padding: 5rem 0rem;
+}
+
+/*----------------------------------------*/
+
+.container-section-03 > .content-title{
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--S3-content-title-color);
+    margin-bottom: 2rem;
+}
+
+.container-section-03 > .content-title > h2{
+    font-weight: 700;
+}
+
+.container-section-03 > .content-title > p{
+    font-size: .9rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------*/
+
+.content-menu-buttons{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 5px;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.content-menu-buttons > button{
+    border: none;
+    padding: .8rem;
+    background-color: var(--S3-background-color-button);
+    color: var(--S3-text-color-button);
+    border-radius: 3px;
+    font-weight: 600;
+
+    width: 100%;
+    max-width: 22rem;
+    transition: background .6s ease;
+}
+
+.content-menu-buttons > button.active{
+    background-color: var(--S3-background-color-button-active);
+}
+
+
+@media screen and (min-width: 992px){
+    .content-menu-buttons{
+        flex-wrap: nowrap;
+    }
+}
+
+/*----------------------------------------*/
+
+.content-cards{
+    display: flex;
+    overflow-x: auto;
+    
+    gap: .5rem;
+    padding: .5rem;
+    margin: 0;
+}
+
+.card-pricing{
+    background-color: var(--S3-background-color-card-pricing);
+    color: var(--S3-text-color-card-pricing);
+
+    width: 100%;
+    max-width: 20rem;
+    min-width: 19rem;
+    border-radius: 5px;
+    padding: 2rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.card-pricing > h3{
+    font-size: 1.5rem;
+}
+
+.card-pricing > h4{
+    font-size: 2.7rem;
+    text-align: center;
+    line-height: .9;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.card-pricing > blockquote{
+    font-size: 1.2rem;
+    width: 100%;
+    height: 9rem;
+}
+
+.card-pricing > blockquote > strong{
+    font-weight: 900;
+    margin-right: .5rem;
+}
+
+.card-pricing > p{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-pricing > h5{
+    font-size: 4.5rem;
+
+    align-items: center;
+    display: flex;
+
+    line-height: .8;
+    font-weight: 700;
+}
+
+.card-pricing > h5 > span{
+    font-size: 1.7rem;
+}
+
+.card-pricing > h5.consult-value{
+    font-size: 3.2rem;
+}
+
+.card-pricing > .a-whatsapp{
+    background-color: var(--S3-background-color-link-a);
+    color: var(--S3-text-color-link-a);
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    padding: .7rem;
+    border-radius: 3px;
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+/*----------------------------------------*/
+
+.promotion-pricing{
+    background-color: var(--S3-background-color-card-pricing-promotion);
+    color: var(--S3-text-color-card-pricing-promotion);
+}
+
+.promotion-pricing > .a-whatsapp{
+    background-color: var(--S3-background-color-link-a-promotion);
+    color: var(--S3-text-color-link-a-promotion);
+}
+
+@media screen and (min-width: 375px){
+
+    .card-pricing{
+        min-width: 21rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .content-cards{
+        overflow-x: unset;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem;
+    }
+
+    .card-pricing{
+        min-width: 15rem;
+        max-width: 22rem;
+        height: 33rem;
+    }
+
+    .promotion-pricing{
+        height: 35rem;
+    }
+}

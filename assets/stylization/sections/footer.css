@@ -1,0 +1,165 @@
+/* FOOTER | INFORMATION CONTACT -----------------------*/
+
+.section-footer-header{
+    background-color: var(--footer-background-color);
+}
+
+.container-footer-header{
+    display: block;
+}
+
+/* FOOTER | INFORMATION BRAND AND NETWORK -------------*/
+
+.container-footer-header > .content-brand{
+    text-align: center;
+    padding: 2rem 0rem;
+    color: var(--footer-text-color-brand);
+}
+
+.container-footer-header > .content-brand > img{
+    width: 100%;
+    max-width: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-footer-header > .content-brand > p{
+    font-size: .9rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container-footer-header > .content-brand > .social-link{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1.5rem auto;
+}
+
+.container-footer-header > .content-brand > .social-link > a{
+    text-decoration: none;
+    background-color: var(--footer-background-color-social-a);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
+
+    transition: .6s ease;
+}
+
+.container-footer-header > .content-brand > .social-link > a > img{
+    width: 100%;
+    max-width: 3.5rem;
+    padding: .7rem;
+}
+
+.container-footer-header > .content-brand > .social-link > a:hover{
+    transform: translateY(-.5rem);
+    background-color: var(--footer-background-color-social-a-hover);
+}
+
+.container-footer-header > .content-brand > .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.container-footer-header > .content-brand > .contact > p{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+/* FOOTER | INFORMATION LINKS -------------------------*/
+
+.container-footer-header > .content-links{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+
+    width: 100%;
+    max-width: 15rem;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+}
+
+.container-footer-header > .content-links > h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--footer-text-color-link-h3);
+}
+
+.container-footer-header > .content-links > a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--footer-text-color-link-a);
+    font-size: 1rem;
+    padding: .3rem;
+
+    position: relative;
+}
+
+.container-footer-header > .content-links > a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--footer-after-color-link-hover);
+    transition: .6s ease;
+}
+
+.container-footer-header > .content-links > a:hover::after{
+    width: 100%;
+}
+
+/* RESPONSIVE FOR TABLET ------------------------------*/
+
+@media screen and (min-width: 768px){
+    .container-footer-header{
+        text-align: start;
+        display: flex;
+        align-items: start;
+        padding: 3rem 0rem;
+    }
+
+    .container-footer-header > .content-brand{
+        text-align: start;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-footer-header > .content-brand > p{
+        margin: 0;
+    }
+
+    .container-footer-header > .content-links{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 1rem;
+        max-width: 12rem;
+    }
+
+    .container-footer-header > .content-brand > .social-link{
+        justify-content: start;
+    }
+}
+
+/* FOOTER | COPYRIGHT ---------------------------------*/
+
+.section-footer-copyright{
+    background-color:var(--footer-background-color-copyright);
+}
+
+.container-footer-copyright{
+    text-align: center;
+    padding: 1rem 2rem;
+    
+}
+
+.container-footer-copyright > p{
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--footer-text-color-copyright);
+}

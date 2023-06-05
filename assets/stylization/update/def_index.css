@@ -1,0 +1,11 @@
+.container-section-01{
+    padding: 5rem 2rem 0rem;
+}
+
+.container-section-02 > .content-img > img{
+    max-width: 25rem;
+}
+
+.container-section-06 > .content-img > img{
+    max-width: 27rem;
+}

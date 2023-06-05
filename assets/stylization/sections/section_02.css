@@ -1,0 +1,79 @@
+/* SECTION 02 ----------------------------*/
+.section-02{
+    background-color: var(--S2-background-color-section);
+}
+
+.container-section-02{
+    padding: 5rem 2rem;
+}
+
+/* SECTION 02 | CONTENT TEXT -------------*/
+
+.container-section-02 > .content-text{
+    padding: 0;
+    color: var(--S2-content-text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container-section-02 > .content-text > h2{
+    margin-bottom: 1.5rem;
+    font-weight: 700
+}
+
+.container-section-02 > .content-text > h2 > strong{
+    color: var(--S2-content-text-color-h2-strong);
+}
+
+.container-section-02 > .content-text > p{
+    margin: 0;
+    color: var(--S2-content-text-color-p);
+    margin-bottom: 1rem;
+}
+
+.container-section-02 > .content-text > a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--S2-content-text-color-link-a);
+
+    display: block;
+    max-width: 15rem;
+    padding: .8rem;
+    margin: 2rem 0rem;
+    border-radius: 3px;
+    
+    background-color: var(--S2-content-background-color-link-a);
+}
+
+/*----------------------------------------*/
+
+.container-section-02 > .content-img{
+    padding: 1rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-section-02 > .content-img > img{
+    width: 100%;
+    max-width: 425px;
+}
+
+@media screen and (min-width: 992px){
+    .container-section-02{
+        padding: 5rem .5rem;
+    }
+
+    .container-section-02 > .content-text{
+        padding: 0rem 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .container-section-02 > .content-img > img{
+        max-width: 30rem;
+    }
+}

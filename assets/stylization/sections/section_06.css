@@ -1,0 +1,101 @@
+/* SECTION 06 ----------------------------*/
+.section-06{
+    background-color: var(--S6-background-color-section);
+}
+
+.container-section-06{
+    padding: 5rem 2rem;
+}
+
+/* SECTION 06 | CONTENT TEXT -------------*/
+
+.container-section-06 > .content-text{
+    padding: 0;
+    color: var(--S6-content-text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container-section-06 > .content-text > h2{
+    margin-bottom: 1.5rem;
+}
+
+.container-section-06 > .content-text > p{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+/* SECTION 06 | CONTENT IMG --------------*/
+
+.container-section-06 > .content-img{
+    padding: 1rem 0rem 0rem;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.container-section-06 > .content-img > img{
+    width: 100%;
+    max-width: 425px;
+}
+
+/* SECTION 06 | CONTENT COLORS --------------*/
+
+.container-section-06 > .content-text > .container-colors{
+    display: flex;
+    gap: .5rem;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem 0rem;
+}
+
+.container-section-06 > .content-text > .container-colors > .card-colors{
+    width: 70px;
+    height: 70px;
+}
+
+.container-section-06 > .content-text > .container-colors > .card-colors:nth-child(1){
+    background-color: #1C272B;
+}
+
+.container-section-06 > .content-text > .container-colors > .card-colors:nth-child(2){
+    background-color: #253439;
+}
+
+.container-section-06 > .content-text > .container-colors > .card-colors:nth-child(3){
+    background-color: #758185;
+}
+
+.container-section-06 > .content-text > .container-colors > .card-colors:nth-child(4){
+    background-color: #F4F9FA;
+}
+/* SECTION 06 | MEDIA SCREEN -------------*/
+
+@media screen and (min-width: 992px){
+    .container-section-06{
+        padding: 5rem .5rem;
+    }
+
+    .container-section-06 > .content-text{
+        padding: 0rem 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .container-section-06 > .content-img{
+        padding: 0;
+    }
+
+    .container-section-06 > .content-img > img{
+        max-width: 30rem;
+    }
+
+    .container-section-06 > .content-text > ul > li{
+        font-size: 1.1rem;
+    }
+}
